@@ -11,7 +11,7 @@ def process_documents(documents: list) -> list:
 
     for document in documents:
         if not validate_document(document):
-            logger.warning("Skipping invalid document")
+            logger.warning("Skipping invalid document.")
             continue
 
         processed_document = {
