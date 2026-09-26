@@ -1,0 +1,12 @@
+[
+  {
+    "id": "doc-001",
+    "title": "Introduction to AI Agents",
+    "content": "AI agents can use tools to complete bounded tasks."
+  },
+  {
+    "id": "doc-002",
+    "title": "RAG Fundamentals",
+    "content": "RAG retrieves external information before generating an answer."
+  }
+]
