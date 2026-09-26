@@ -64,3 +64,13 @@ def test_process_documents():
     assert result[0]["id"] == "doc-001"
     assert result[0]["title"] == "AI Agents"
     assert result[0]["content_length"] == 24    
+
+def test_empty_string_document():
+    document ={
+        "id":"",
+        "title":"AI Agents",
+        "content":"Agents can use tools."
+
+    }    
+
+    assert validate_document(document) is False

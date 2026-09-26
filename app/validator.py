@@ -11,6 +11,7 @@ def validate_document(document: Document) -> bool:
         and isinstance(document["id"], str)
         and isinstance(document["title"], str)
         and isinstance(document["content"], str)
+        and document["id"].strip() and document["title"].strip() and document["content"].strip()
     ):
         return True
 
